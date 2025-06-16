@@ -1,4 +1,5 @@
 import dados.listas_e_dicionarios as dados
+import validacoes.validacoes as vali
 import os
 
 def mostrar_caronas(usu_atual):

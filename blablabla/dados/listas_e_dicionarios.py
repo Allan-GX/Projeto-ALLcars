@@ -1,3 +1,7 @@
+caminho_usuarios = 'C:\\Users\\Allan\\Desktop\\Códigos\\Projetos\\blablabla\\dados\\usuarios.txt'
+caminho_relatorio = 'C:\\Users\\Allan\\Desktop\\Códigos\\Projetos\\blablabla\\dados\\relatorio.txt'
+
+relatorios = []
 usuarios = []
 caronas = []
 veiculos = []
@@ -7,27 +11,13 @@ horas = []
 chave = []
 valor = []
 
-usuarioadm = {
-    'nome': 'adm',
-    'email': 'a@me.com',
-    'senha': '123',
-    'pchave' : 'ADM'
-}
-
-usuarioadm2 = {
-    'nome': 'adm2',
-    'email': 'ad@me.com',
-    'senha': '654321',
-    'pchave' : 'ADM2'
-}
-
 carona_pre_cadastrada = {
     'inicio' : 'Cajazeiras',
     'destino' : 'João Pessoa',
     'data' : '30/05/2025',
     'hora' : '00:00',
     'vagas' : 3,
-    'preco_vaga' : '500,00',
+    'preco_vaga' : '500.00',
     'motorista' : 'Kleber',
     'email do motorista' : 'kleb@icloud.com',
     'passageiros' : []
@@ -40,11 +30,10 @@ carona_pre_cadastrada2 = {
     'data' : '28/06/2025',
     'hora' : '22:30',
     'vagas' : 30,
-    'preco_vaga' : '50,00',
+    'preco_vaga' : '50.00',
     'motorista' : 'Guilherme Estevo',
     'email do motorista' : 'guilwilliano@hotmail.com',
-    'passageiros' : []
-                            
+    'passageiros' : []                           
 }
 
 traducao = {
@@ -59,10 +48,6 @@ traducao = {
     'passageiros' : 'passageiros'
 }
 
-usuarios.append(usuarioadm)
-usuarios.append(usuarioadm2)
-emails.append(usuarioadm['email'])
-emails.append(usuarioadm2['email'])
 datas.append(carona_pre_cadastrada['data'])
 datas.append(carona_pre_cadastrada2['data'])
 horas.append(carona_pre_cadastrada['hora'])

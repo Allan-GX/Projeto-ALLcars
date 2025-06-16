@@ -6,6 +6,9 @@ import usuarios.cadastro as cad
 import usuarios.login as logi
 import os
 
+dados.usuarios = (eval(cad.usuarios_salvos(dados.caminho_usuarios)))
+cad.emails_salvos(dados.emails,dados.usuarios)
+
 while True:
     os.system('cls')
     print('=' * 70)
@@ -23,6 +26,7 @@ while True:
 
     elif hub_1 == '1':
         cad.cadastro_usuario()
+        cad.novos_usuarios(dados.caminho_usuarios,dados.usuarios)
 
     elif hub_1 == '2':
         usu,email= logi.login()
@@ -77,6 +81,7 @@ while True:
                         print('=' * 70)
                         print('\n[1] Cadastrar carona\
                         \n[2] Ver Caronas Cadastradas\
+                        \n[3] Ver Relatorio de Valores\
                         \n[0] Voltar\n')
                         print('=' * 70)
                         hub_3cond = input ('Digite o digito doque você deseja acessar: ')
@@ -90,9 +95,14 @@ while True:
                             moto.cadastro_carona(usu,email)
                         
                         elif hub_3cond == '2':
-                            conf = moto.mostrar_caronas_motorista(usu)
+                            conf = moto.continuacao_carona_motorista(moto.mostrar_caronas_motorista(usu))
                             if conf == '1':
                                 moto.apagar_carona(usu)
+                        
+                        elif hub_3cond == '3':
+                            conf = moto.relatorio_totalizador(moto.mostrar_relatorios_caronas(usu))
+                            if conf == '1':
+                                moto.salvar_relatorio(usu)
     
     elif hub_1 == '3':
         dados.textin_agradecimento()

@@ -1,0 +1,17 @@
+================== RELATORIO ==================
+
+1° Carona cadastrada:
+
+Início: cls
+Destino: 23
+Data: 23/04/2077
+Horario: 23;35
+Vagas Restantes: 8
+Preço por vaga: 100
+Motorista: adm
+E-mail do Motorista: a@me.com
+passageiros: []
+
+O valor total é: R$ 0.00
+
+Ao todo seu ganho total será de: R$ 0.00

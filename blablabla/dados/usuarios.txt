@@ -1,0 +1,1 @@
+[{'nome': 'adm', 'email': 'a@me.com', 'senha': '123', 'pchave': 'ADM'}, {'nome': 'adm2', 'email': 'ad@me.com', 'senha': '654321', 'pchave': 'ADM2'}, {'nome': 'Allan', 'email': 'abesta@me.com', 'senha': '1234567', 'pchave': 'Auanda'}]
